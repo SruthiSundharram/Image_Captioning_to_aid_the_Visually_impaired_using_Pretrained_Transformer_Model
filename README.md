@@ -12,6 +12,9 @@ References:
 2) Image Captioning using VGG16
       The method of captioning images can be logically divided into two modules: an image-based model, which extracts the details and nuances from the image, and               language-based model, which converts the details and objects from the image-based model into natural phrases. 
       
+      Using the below mentioned dataset on Kaggle we were able to generate captions:
+      https://www.kaggle.com/datasets/srbhshinde/flickr8k-sau
+      
       https://github.com/anunay999/image_captioning_vgg16
       
       
