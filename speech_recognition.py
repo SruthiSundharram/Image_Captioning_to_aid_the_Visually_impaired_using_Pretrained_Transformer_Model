@@ -12,7 +12,6 @@ try:
             audio2 = r.listen(source2)
             MyText = r.recognize_google(audio2)
             MyText = MyText.lower()
-            #SpeakText(MyText)
             print(MyText)
 except sr.RequestError as e:
         print("Could not request results; {0}".format(e))        
