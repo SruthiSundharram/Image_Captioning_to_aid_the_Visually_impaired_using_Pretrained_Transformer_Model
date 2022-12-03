@@ -15,10 +15,7 @@ def img2Speech(image):
   generated_audio = gTTS(generated_text)
   generated_audio.save("demo.mp3")
 
-  #song = AudioSegment.from_mp3("demo.mp3")
-  #play(song)
-  #os.system("demo.mp3")
-  #return play(song)
+
   return 'demo.mp3'
 
 demo = gr.Interface(
