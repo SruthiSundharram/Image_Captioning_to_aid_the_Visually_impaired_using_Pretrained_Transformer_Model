@@ -9,7 +9,7 @@ import os
 model = pipeline('image-to-text')
 
 def img2Speech(image):
-  #image = Image(image)
+  
   description = model(image)
   generated_text = description[0]['generated_text']
   generated_audio = gTTS(generated_text)
