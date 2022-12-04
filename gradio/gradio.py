@@ -6,7 +6,9 @@ from pydub import AudioSegment
 from pydub.playback import play
 import os
 
+
 model = pipeline('image-to-text')
+
 
 def img2Speech(image):
   
@@ -16,13 +18,29 @@ def img2Speech(image):
   generated_audio.save("demo.mp3")
 
 
+
+
   return 'demo.mp3'
 
-demo = gr.Interface(
+
+    demo = gr.Interface(
+    
     fn = img2Speech,
+
     inputs = gr.Image(), #source="webcam", type='pil'), #source="webcam", source='upload', type='pil'
     outputs=gr.Audio() # gr.Audio(),
 
 )
 
 demo.launch(debug=True)
+
+   
+    inputs = gr.Image(source="webcam", type='pil'),
+    
+    outputs=gr.Audio()
+
+)
+
+
+demo.launch(debug=True)
+
